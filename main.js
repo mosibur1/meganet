@@ -318,7 +318,7 @@ async function checkProxyIP(proxy) {
 }
 
 async function main() {
-  console.log(colors.yellow("Tool được phát triển bởi nhóm tele Airdrop Hunter Siêu Tốc (https://t.me/airdrophuntersieutoc)"));
+  console.log(colors.yellow("Tool By MRPTech - Join Telegram Channel (https://t.me/mrptechofficial)"));
   console.log(colors.yellow("Ping mỗi 30s | Điểm cập nhật mỗi 5 phút"));
 
   await sleep(2);
@@ -373,7 +373,7 @@ async function main() {
   await Promise.all(tasks.map((task) => task()));
 
   process.on("SIGINT", () => {
-    console.log(`[${getFormattedDateTime()}] Shutting down bot...Tool developed by the team of tele Airdrop Hunter Siêu Tốc (https://t.me/airdrophuntersieutoc)`.yellow);
+    console.log(`[${getFormattedDateTime()}] Shutting down bot...Tool By MRPTech - Join Telegram Channel (https://t.me/mrptechofficial)`.yellow);
     wss.forEach((ws) => ws?.close());
     process.exit(0);
   });
